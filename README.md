@@ -61,6 +61,7 @@ client-config-dir ccd
 
 Make sure AUTOSTART="server" is uncommented in /etc/default/openvpn, then run 
 ```systemctl daemon-reload
-service openvpn restart```
+service openvpn restart
+```
 
 Now you can use this lovely software.
