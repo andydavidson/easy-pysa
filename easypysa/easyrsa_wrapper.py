@@ -20,7 +20,7 @@ class EasyRSA_Wrapper(object):
 
     def check_executable(self):
         try:
-            check_ca = subprocess.check_call([self.easyrsa_executable, "check_ca"])
+            check_ca = subprocess.check_call([self.easyrsa_executable, "show-ca"])
             return "OK"
         except subprocess.CalledProcessError as error:
             print error
