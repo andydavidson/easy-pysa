@@ -17,6 +17,8 @@ class EasyRSA_Wrapper(object):
         """
         self.easyrsa_directory = easyrsa_directory
         self.easyrsa_executable = easyrsa_directory + "/easyrsa"
+        os.chdir(self.easyrsa_directory)
+        return
 
     def check_executable(self):
         try:
