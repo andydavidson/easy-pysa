@@ -11,7 +11,7 @@ class EasyRSA_Wrapper(object):
     Should only be called by easypysa.py, all of the sanity checks and validation are done
     in the user facing module.
     """
-    def __init__(self, easyrsa_directory):
+    def __init__(self, easyrsa_directory='/etc/openvpn/ca'):
         """
         Returns an EasyRSA_Wrapper empty object
         """
